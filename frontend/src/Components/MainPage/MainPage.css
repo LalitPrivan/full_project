@@ -1,0 +1,256 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.main{
+  background-color: rgba(19, 18, 18, 0.855);
+  width: 100%;
+  margin: 0%;
+}
+
+.col-one{
+  /* background-color: aqua; */
+  border: 1px solid white;
+  height: 100vh;
+}
+
+.col-tow{
+  /* background-color: blue;  */
+  border: 1px solid white;
+  justify-content: center;
+  justify-content: space-between;
+  padding-top: 2%;
+}
+
+.videomain{
+  height: 80vh;
+text-align: center;  
+justify-content: center;/* border: 1px solid rgba(255, 255, 255, 0.308); */
+}
+
+
+.video-cont{
+ /* height: 75dvh; */
+ width: 100%;
+ /* height: 100%; */
+ display: flex;
+ align-items: center;
+}
+
+.videocontrols{
+  padding-top: 5px;
+  padding-bottom: 6px;
+  /* margin-top: 30px; */
+  border: 1px solid rgba(255, 255, 255, 0.219);
+  background-color: rgb(66, 59, 59);
+}
+
+.reelmain{
+  height: 15vh;
+  padding-top: 1%;
+  padding-left: 1%; 
+   padding-right: 1%;
+}
+
+
+.custom-context-menu {
+  background-color: #fff; /* Background color */
+  border: 1px solid #ccc; /* Border */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow */
+  padding: 5px 0; /* Padding */
+  font-size: 14px; /* Font size */
+  z-index: 1000; /* Ensure the menu appears on top of other elements */
+}
+
+.context-menu-option {
+  padding: 8px 12px; /* Padding */
+  cursor: pointer; /* Cursor style */
+}
+
+.context-menu-option:hover {
+  background-color: #f0f0f0; /* Hover background color */
+}
+
+.team-btn{
+  /* display: flex; */
+  margin: 6%;
+  margin-top: 4%;
+  justify-content: space-evenly;     
+}
+
+
+
+@media (max-width: 2560px) {
+.video-cont{
+  height: 80dvh;
+  width: 100%;
+  /* height: 100%; */
+ }
+
+ .videomain{
+  height: 80dvh;
+  /* border: 1px solid rgba(255, 255, 255, 0.308); */
+}
+ 
+ .videocontrols{
+   padding-top: 5px;
+   padding-bottom: 6px;
+   /* margin-top: 30px; */
+   border: 1px solid rgba(255, 255, 255, 0.219);
+   background-color: rgb(66, 59, 59);
+ }
+ 
+}
+
+
+
+@media (max-width: 1440px) {
+  .video-cont{
+    height: 80dvh;
+    width: 100%;
+    /* height: 100%; */
+   }
+  
+   .videomain{
+    height: 67dvh;
+    /* border: 1px solid rgba(255, 255, 255, 0.308); */
+  }
+   
+   .videocontrols{
+     padding-top: 5px;
+     margin-left: 4px;
+     
+     padding-bottom: 6px;
+     /* margin-top: 30px; */
+     border: 1px solid rgba(255, 255, 255, 0.219);
+     background-color: rgb(66, 59, 59);
+   }
+   
+  }
+
+  
+
+@media (max-width: 1024px) {
+  .video-cont{
+    height: 80dvh;
+    width: 100%;
+    /* height: 100%; */
+   }
+  
+   .videomain{
+    height: 80dvh;
+    /* border: 1px solid rgba(255, 255, 255, 0.308); */
+  }
+   
+   .videocontrols{
+     padding-top: 5px;
+     padding-bottom: 6px;
+     /* margin-top: 30px; */
+     border: 1px solid rgba(255, 255, 255, 0.219);
+     background-color: rgb(66, 59, 59);
+   }
+   
+  }
+
+  .swap-container {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .title {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .button-container {
+    display: flex;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+  }
+  .btn-selected {
+    background-color: #007bff;
+    color: #fff;
+}
+.btn btn-outline-secondary me-2{
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transition for smoother color change */
+}
+.timeline-item {
+  height: 20px; /* Set the desired height */
+}
+.vertical-line {
+  position: absolute;
+  top: 0;
+  left: 53.4%;
+  width: 2px;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.239);
+  content: '';
+  transform: translateX(-50%);
+}
+
+.tooltip-item {
+  margin-bottom: 50px;
+}
+
+div.vis-tooltip {
+  position: fixed; /* Position the tooltip fixed to the viewport */
+  z-index: 100; /* Ensure the tooltip appears above other elements */
+  max-width: 350px; /* Set a maximum width to prevent excessive expansion */
+  background-color: #302b2b; /* Set background color */
+  border: 1px solid #000; /* Add border */
+  padding: 10px; /* Add padding */
+  box-sizing: border-box; /* Ensure padding is included in width and height */
+  white-space: normal; /* Allow line breaks to occur */
+  margin-top: 35%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.10); /* Add box shadow */
+  color: #fffcfc;
+  font-weight: 100;
+}
+
+/* Style the inner data to display vertically */
+div.vis-tooltip p {
+  margin: 0; /* Remove default margin */
+  padding: 5px 0; /* Add padding between each data */
+  display: block; /* Display data vertically */
+  border-bottom: 1px solid #ccc; /* Add border bottom to separate each data */
+}
+
+ .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+ 
+button {
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #606c79;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+} 
+
+button:hover {
+  background-color: #000000;
+} 

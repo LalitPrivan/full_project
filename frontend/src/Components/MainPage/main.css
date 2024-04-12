@@ -1,0 +1,229 @@
+/* .video-container {
+  margin-bottom: 20px;
+} */
+
+.timeline-container {
+    width: 100%;
+    height: 32px;
+    border: 1px solid #ccc;
+    /* position: fixed; */
+    top: 40%;
+    transform: translateY(-200%);
+    user-select: none;
+    -webkit-user-select: none;
+    background: #f0f0f0;
+    margin-top: 12px;
+    position: relative;
+    /* margin-left: 100px !important; */
+    overflow: hidden;
+    }
+    
+    
+    .timeline-bar {
+      width: 20000%;
+      height: 100%;
+      background: #4f8fb958;
+      position: absolute;
+      right: 50%; /* Change to 50% to start from the center right */
+      transform: translateX(99.75%);/* Adjust position to center */
+      display: flex;
+      align-items: center;
+    }
+    
+    
+    .timeline-bar .marker {
+      width: 8px;
+      height: 20px;
+      background-color: red;
+      margin-right: 4px;
+    }
+    
+    .red-line {
+      position: absolute;
+      top: 86%;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+  
+  .arrow-up {
+      width: 0;
+      height: 0;
+      border-left: 7px solid transparent; /* half the width */
+      border-right: 7px solid transparent; /* half the width */
+      border-bottom: 7px solid rgb(255, 0, 0); /* the height */
+  }
+  
+    
+    .timestamp {
+      background-color: white;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-size: 12px;
+      color: black;
+    }
+    
+    .timeline-container.grabbing,
+    .timeline-bar.grabbing {
+      cursor: grabbing;
+    }
+    
+    .button-container {
+      /* margin-top: 10px; */
+      justify-content: space-between;
+    }
+    
+    .button {
+      padding: 10px;
+      background-color: #3498db;
+      color: #fff;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      /* margin-top: 60px; */
+      /* justify-content: space-between; */
+    }
+    
+    .button:hover {
+      background-color: #287bbc;
+    }
+    
+    @keyframes slideRight {
+      0% {
+        transform: translateX(50%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+      
+    }
+    
+    .timeline-bar.playing {
+      animation: slideRight linear infinite;
+    }
+    
+  
+    
+    .timeline-container2 {
+      /* Add styles for the second timeline-container */
+      /* Example: */
+      width: 100%;
+      height: 40px;
+      border: 1px solid #ccc;
+      position: fixed;
+      /* top: 60%; Adjust position as needed */
+      transform: translateY(-200%);
+      user-select: none;
+      -webkit-user-select: none;
+      background: #f0f0f0;
+      margin-top: 25px;
+      position: relative;
+      /* margin-left: 100px !important; */
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+    }
+  
+  
+    .timeline-bar2 {
+      /* Add styles for the second timeline-bar */
+      /* Example: */
+      width: 100%;
+      height: 100%;
+      background: #6aa5cc;
+      position: absolute;
+      left: auto;
+      right: 50%;
+      transform: translateX(50%);
+      display: flex;
+      align-items: center;
+    }
+  
+    .row {
+       --bs-gutter-x: 1.5rem;
+    }
+  
+    /* styles.css */
+  
+  .team-point {
+    border: 1px solid #000;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .team-point span {
+    margin: 0 5px;
+  }
+  .team-point span.bold {
+    font-weight: bold;
+  }
+  .btn.btn-2p {
+    background-color: blue !important;
+    color: white;
+  }
+  
+  .original-color.btn-2p {
+    background-color: blue !important;
+    color: white;
+  }
+  
+  .btn.btn-3p {
+    background-color: rgb(255, 145, 0) !important;
+    color: white;
+  }
+  
+  .btn.btn-free-throw {
+    background-color: green !important;
+    color: white;
+  }
+  
+  .btn.btn-foul {
+    background-color: red !important;
+    color: white;
+  }
+  
+  .btn.btn-team-rebound {
+    background-color: yellow !important;
+    color: black;
+  }
+  
+  .btn.btn-inbound {
+    background-color: skyblue !important;
+  }
+  
+  .btn.btn-turnover {
+    background-color: black !important;
+    color: white;
+  }
+  
+  .btn.btn-substitution {
+    background-color: rgb(78, 98, 216) !important;
+    color: white;
+  }
+  
+  /* CSS for active button */
+  .btn.active {
+    background-color: #a84d4d !important; /* Change to your desired active background color */
+    color: #fff9f9 !important; /* Change to your desired active text color */
+  }
+  
+  .btn.active1 {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  .active {
+    background-color: rgb(156, 99, 99);
+    /* Add any other styles for the active state */
+}
+.tooltip {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Add more styling as needed */
+}

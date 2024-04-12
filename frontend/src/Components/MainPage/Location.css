@@ -1,0 +1,57 @@
+.popup {
+    position: fixed;
+    top: 32%; 
+    left: 35%;
+    margin-top: 2%;
+    margin-left: 2%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    padding-bottom: 55px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 60%; /* Adjusted width for responsiveness */
+    height: 70%; /* Adjusted height for responsiveness */
+    overflow: hidden; /* Hide overflow content */
+    background-color: rgb(255, 255, 255);
+    opacity: 0.8;
+}
+
+#graph-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0.3; */
+}
+
+.cursor {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    pointer-events: none; /* Ensure cursor is not capturing mouse events */
+}
+
+.cursor-info {
+    position: absolute;
+    text-align: left;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #120909;
+}
+
+/* Save button styles */
+.save-button {
+    text-align: right;
+    margin: 10px;
+    margin-bottom:15px;
+}

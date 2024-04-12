@@ -1,0 +1,49 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.tagPanel{
+    background: #000000c9;
+    height: 100vh;
+
+}
+.col-one{
+    padding: 0%;
+    border: 2px solid #ffffffc9;
+}
+.col-two{
+    height: 100vh;
+    background: #1422a2;
+    padding: 0%;
+    border: 2px solid #ffffffc9;
+    
+}
+.vTop{
+    background: rgb(255, 0, 0);
+    border: 1px red;
+    /* height: 70%; */
+}
+.tBottom{
+    background: rgb(158, 221, 0);
+    border: 1px green;
+    height:  30%;
+border: 1px solid yellow;
+}
+.vsize{
+    width: 78%;
+    height: 70%;
+}
+
+#player-container {
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* You can adjust this value to your needs */
+    
+  }
+  
+  .videosize {
+    max-width: 100%;
+    max-height: 70vh; /* You can adjust this value to your needs */
+  }
+
+  
